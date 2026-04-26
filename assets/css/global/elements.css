@@ -1,0 +1,41 @@
+.contact {
+    background: var(--accent);
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.lang-selector {
+    display: flex;
+    background-color: var(--grey);
+    padding: 4px;
+    border-radius: 50px;
+    gap: 2px;
+}
+
+.lang-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-btn:hover {
+    color: var(--fg);
+    transform: translateY(-1px);
+}
+
+.lang-btn.active {
+    background-color: var(--fg);
+    color: var(--bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

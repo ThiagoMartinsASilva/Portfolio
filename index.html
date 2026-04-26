@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago Martins</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/global/global.css">
+    <script type="module" src="assets/js/global/global.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Thiago Martins.</div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home"  data-i18n="nav_home">Início</a>
+            <a href="#about" data-i18n="nav_about">Sobre</a>
+            <a href="#work"  data-i18n="nav_projects">Projetos</a>
+
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="PT">PT</button>
+                <button class="lang-btn" data-lang="EN">EN</button>
+                <button class="lang-btn" data-lang="ES">ES</button>
+            </div>
+
+            <a href="#contact" class="contact" data-i18n="nav_contact">Contato</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 class="reveal" data-i18n="hero_title">
+                Olá, eu sou Thiago Martins! <br> Engenheiro de Software em Formação.
+            </h1>
+            <p class="reveal" data-i18n="hero_subtitle">
+                Transformando ideias complexas em interfaces simples e funcionais.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#work" class="hero-cta" data-i18n="hero_cta">Ver projetos</a>
+                <a href="documents/THIAGO MARTINS.pdf" class="hero-cv" data-i18n="hero_cv" download>  Baixar CV ↓</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-container reveal">
+                <div class="about-image-wrapper">
+                    <img src="assets/images/global/thiago.JPG" alt="Thiago Martins" class="profile-pic" draggable="false">
+                </div>
+
+                <div class="about-text-content">
+                    <h2 data-i18n="about_title">Sobre</h2>
+                    <div class="about-description">
+                        <p data-i18n="about_text_p1">
+                            Acredito que a vida pode ser redesenhada e que programar é minha ferramenta para isso.
+                        </p>
+                        <p data-i18n="about_text_p2">
+                            Como pessoa com TEA (Transtorno do Espectro Autista), minha percepção é naturalmente diferente e revela padrões e caminhos que nem sempre são óbvios. Vejo essa percepção como um sinal de que pensamos diferente e que são essas diferenças que geram a inovação.
+                        </p>
+                        <p data-i18n="about_text_p3">
+                            Por isso eu valorizo quem pensa fora da caixa, porque são essas ideias que movem o nosso mundo para frente.
+                        </p>
+                    </div>
+
+                    <div class="skills-wrapper">
+                        <div class="skill-group">
+                            <h4 data-i18n="skills_main">Foco Principal</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag" data-i18n="skill_java">Java</span>
+                                <span class="skill-tag" data-i18n="skill_python">Python</span>
+                                <span class="skill-tag" data-i18n="skill_javascript">JavaScript</span>
+                                <span class="skill-tag" data-i18n="skill_html">HTML</span>
+                                <span class="skill-tag" data-i18n="skill_css">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4 data-i18n="skills_extra">Complementares</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag" data-i18n="skill_scrum">Scrum</span>
+                                <span class="skill-tag" data-i18n="skill_docker">Docker</span>
+                                <span class="skill-tag" data-i18n="skill_sql">SQL</span>
+                                <span class="skill-tag" data-i18n="skill_git">Git</span>
+                                <span class="skill-tag" data-i18n="skill_apirest">API REST</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4 data-i18n="skills_languages">Idiomas</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag" data-i18n="skill_lang_pt">Português — Nativo</span>
+                                <span class="skill-tag" data-i18n="skill_lang_en">Inglês — B1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section reveal">
+            <blockquote>
+                <p data-i18n="quote_text">
+                    "Grandes coisas nos negócios nunca são feitas por uma única pessoa. Elas são feitas por um time de pessoas."
+                </p>
+                <cite data-i18n="quote_author">— Steve Jobs</cite>
+            </blockquote>
+        </section>
+
+        <section id="work" class="grid-section">
+            <div class="project-card reveal" 
+                data-title="Portfolio Pessoal"
+                data-desc="Portfólio para apresentar um pouco do que sou e o que estou desenvolvendo."
+                data-img="assets/images/global/portfolio_photo.png"
+                data-site="https://thiagomartinsasilva.github.io/Portfolio/" 
+                data-github="https://github.com/ThiagoMartinsASilva/Portfolio">
+                <div class="card-image"> 
+                    <img src="assets/images/global/portfolio_photo.png" alt="Portfolio Pessoal" draggable="false">
+                </div>
+                <h3 data-i18n="project_1_title">Portfolio Pessoal</h3>
+                <p data-i18n="project_1_tag">Thiago Martins • 2026</p>
+            </div>
+
+            <div class="project-card reveal" 
+                data-title="Dashboard Financeiro"
+                data-desc=""
+                data-img=""
+                data-site="" 
+                data-github="">
+                <div class="card-image card-image--wip"></div>
+                <h3 data-i18n="project_2_title">Dashboard Financeiro</h3>
+                <p data-i18n="project_2_tag">Thiago Martins • 2026 em Desenvolvimento</p>
+            </div>
+
+            <div class="project-card reveal" 
+                data-title="Filtro de Comprovantes"
+                data-desc=""
+                data-img=""
+                data-site="" 
+                data-github="">
+                <div class="card-image card-image--wip"></div>
+                <h3 data-i18n="project_3_title">Filtro de Comprovante Bancário</h3>
+                <p data-i18n="project_3_tag">Thiago Martins • 2026</p>
+            </div>
+
+            <div class="project-card reveal" 
+                data-title="Em Andamento"
+                data-desc=""
+                data-img=""
+                data-site="#" 
+                data-github="#">
+                <div class="card-image card-image--wip"></div>
+                <h3 data-i18n="project_4_title">Em Andamento</h3>
+                <p data-i18n="project_4_tag">Thiago Martins • 2026</p>
+            </div>
+        </section>
+
+        <div id="project-modal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Fechar">&times;</button>
+                <div class="modal-body">
+                    <div class="modal-left">
+                        <img id="modal-img" src="" alt="Preview">
+                    </div>
+                    <div class="modal-right">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-desc"></p>
+                        <div class="modal-actions">
+                            <a id="modal-site" href="#" target="_blank" class="btn-primary" data-i18n="modal_btn_site">Acessar Projeto</a>
+                            <a id="modal-github" href="#" target="_blank" class="btn-secondary" data-i18n="modal_btn_github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-inner reveal">
+                <span class="contact-label"   data-i18n="contact_label">Vamos conversar</span>
+                <h2   class="contact-heading" data-i18n="contact_heading">Tem um projeto<br>em mente?</h2>
+                <p    class="contact-sub"     data-i18n="contact_sub">
+                    Estou aberto a novas oportunidades, freelas e colaborações. Me manda uma mensagem.
+                </p>
+                <a href="mailto:thiagomartinsasilva@gmail.com" class="contact-email-btn" data-i18n="contact_email_btn">
+                    thiagomartinsasilva@gmail.com →
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <span class="footer-logo">Thiago Martins.</span>
+                <p class="footer-tagline" data-i18n="footer_tagline">Engenheiro de Software em Formação</p>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#"         data-i18n="nav_home">Início</a>
+                <a href="#about"    data-i18n="nav_about">Sobre</a>
+                <a href="#work"     data-i18n="nav_projects">Projetos</a>
+                <a href="#contact"  data-i18n="nav_contact">Contato</a>
+            </nav>
+
+            <div class="footer-contact-col">
+                <span class="footer-col-label" data-i18n="footer_col_contact">Contato</span>
+                <a href="mailto:thiagomartinsasilva@gmail.com" class="footer-contact-link">thiagomartinsasilva@gmail.com</a>
+                <a href="https://wa.me/5534996716693" target="_blank" class="footer-contact-link" data-i18n="footer_phone">(34) 9 9671-6693</a>
+            </div>
+
+            <div class="footer-social-col">
+                <span class="footer-col-label" data-i18n="footer_col_social">Social</span>
+                <a href="https://www.instagram.com/thiago.martins.silva/" target="_blank" class="footer-social-link" data-i18n="footer_ig">Instagram</a>
+                <a href="https://www.linkedin.com/in/thiagomartinsasilva/" target="_blank" class="footer-social-link" data-i18n="footer_li">LinkedIn</a>
+                <a href="https://github.com/ThiagoMartinsASilva" target="_blank" class="footer-social-link" data-i18n="footer_gh">GitHub</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright"   data-i18n="footer_copy">© 2026 Thiago Martins. Todos os direitos reservados.</p>
+            <p class="footer-made" data-i18n="footer_made">Feito com foco e doses de café ☕</p>
+        </div>
+    </footer>
+
+</body>
+</html>
