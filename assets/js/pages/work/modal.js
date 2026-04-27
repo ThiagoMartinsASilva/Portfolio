@@ -21,12 +21,19 @@ export function initModal() {
             if (mImg)   mImg.src         = "";
 
             const { title, desc, img, site, github } = freshCard.dataset;
-
             if (mTitle)  mTitle.innerText = title  || "";
             if (mDesc)   mDesc.innerText  = desc   || "";
             if (mImg)    mImg.src         = img    || "";
-            if (mSite)   mSite.style.display   = (site   && site   !== "#") ? "inline-block" : "none";
-            if (mGithub) mGithub.style.display = (github && github !== "#") ? "inline-block" : "none";
+            if (mSite) {
+                mSite.href = site || "#";
+                mSite.style.display = (site && site !== "#") ? "inline-block" : "none";
+            }
+            
+            if (mGithub) {
+                mGithub.href = github || "#"; 
+                mGithub.style.display = (github && github !== "#") ? "inline-block" : "none";
+            }
+            // ----------------------------
 
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
